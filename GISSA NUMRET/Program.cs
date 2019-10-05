@@ -17,6 +17,7 @@ namespace GISSA_NUMRET
 
             //Användaren ska gissa ett nummer
             //Try Catch
+            while (true)
 
             try
             {
@@ -48,10 +49,12 @@ namespace GISSA_NUMRET
             {
                 counter++;
                 Console.WriteLine("Grattis! Du tog det på " + counter + " antal gissningar! ");
+                return;
             }
             }
             catch 
             {
+                counter ++;
                 Console.WriteLine("Fel! Du kan bara skriva in siffror!");
                 Console.WriteLine("Försök igen!");
             }
